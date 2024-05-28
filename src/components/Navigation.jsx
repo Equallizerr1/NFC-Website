@@ -7,7 +7,7 @@ function Navigation() {
 		<>
 			<Navbar expand="lg" className="bg-body-tertiary">
 				<Container>
-					<Navbar.Brand href="/HomePage">
+					<Navbar.Brand href="/">
 						<img
 							alt=""
 							src="../src/assets/NFC_Logo.jpg"
@@ -19,10 +19,10 @@ function Navigation() {
 					</Navbar.Brand>
 					<Nav className="me-auto">
 						<Nav.Link href="/concerts">Concerts</Nav.Link>
-						<Nav.Link href="#portraits">Portraits</Nav.Link>
-						<Nav.Link href="#project">Project: I'm Coming Out</Nav.Link>
-						<Nav.Link href="#meet">Meet the Artist</Nav.Link>
-						<Nav.Link href="#testimonials">Testimonials</Nav.Link>
+						<Nav.Link href="/portraits">Portraits</Nav.Link>
+						<Nav.Link href="/project">Project: I'm Coming Out</Nav.Link>
+						<Nav.Link href="/meet">Meet the Artist</Nav.Link>
+						<Nav.Link href="/testimonials">Testimonials</Nav.Link>
 					</Nav>
 				</Container>
 			</Navbar>
