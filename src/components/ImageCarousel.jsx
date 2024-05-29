@@ -1,7 +1,17 @@
 import "bootstrap/dist/css/bootstrap.css";
 import Carousel from "react-bootstrap/Carousel";
+import { useEffect, useState } from "react";
+import { getMedia } from "../../utils/api";
 
 export const ImageCarousel = () => {
+	const [imgArray, setImgArray] = useState([])
+
+	useEffect(() => {
+		getMedia().then(({ data }) => {
+			setImgArray(data)
+		})
+	}, [])
+	console.log(imgArray)
 	return (
 		<div
 			style={{
@@ -12,7 +22,7 @@ export const ImageCarousel = () => {
 				<Carousel.Item interval={1500}>
 					<img
 						className="d-block w-100"
-						src="https://media.geeksforgeeks.org/wp-content/uploads/20210425122739/2-300x115.png"
+						src={imgArray[0].media_url}
 						alt="Image One"
 					/>
 					<Carousel.Caption>
@@ -23,7 +33,7 @@ export const ImageCarousel = () => {
 				<Carousel.Item interval={1500}>
 					<img
 						className="d-block w-100"
-						src="https://media.geeksforgeeks.org/wp-content/uploads/20210425122716/1-300x115.png"
+						src={imgArray[1].media_url}
 						alt="Image Two"
 					/>
 					<Carousel.Caption>
