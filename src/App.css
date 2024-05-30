@@ -1,7 +1,6 @@
 #carousel-container img {
-    width: 70%;
-    height: auto;
+    margin: auto;
     object-fit: cover;
-    object-position: top;
-    max-height: 100vh;
+    max-height: 90vh;
+    max-width: 90vw;
 }

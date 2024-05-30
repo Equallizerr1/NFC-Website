@@ -6,6 +6,7 @@ export const ImageCarousel = () => {
 		<div id="carousel-container"
 			style={{
 				display: "block",
+				padding: 10,
 			}}>
 			<Carousel>
 				<Carousel.Item interval={1500}>
