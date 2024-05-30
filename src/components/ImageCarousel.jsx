@@ -66,7 +66,7 @@ export const ImageCarousel = () => {
 				<Carousel.Item interval={1500}>
 					<img
 						className="d-block w-100"
-						src={"https://scontent-man2-1.cdninstagram.com/v/t51.29350-15/374673955_1485585302257496_5764536069796501876_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=18de74&_nc_ohc=MIKF6rtNBRgQ7kNvgH6wulX&_nc_ht=scontent-man2-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AYASp3uDHUXHQS7-MJtIIDkyNy_DKglvjB7zyDvqo8Iwog&oe=665EBB94"}
+						src={"https://scontent-man2-1.cdninstagram.com/v/t51.29350-15/405257575_1429563544262304_8594137721763410408_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=18de74&_nc_ohc=X3wK5-Kb06MQ7kNvgEvStBt&_nc_ht=scontent-man2-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AYC9IU-vVu0QsPRUC2cNyTcqB52tcVl-B7sOuWsA2so6tA&oe=665EABBD"}
 						alt="Image Six"
 					/>
 					<Carousel.Caption>
