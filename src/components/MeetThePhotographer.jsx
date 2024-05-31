@@ -6,7 +6,7 @@ export const MeetThePhotographer = () => {
     return (
         <>
             <Container>
-                <h1> Meet the Photographer</h1>
+                <h1>Meet the Photographer</h1>
                 <Row>
                     <Col>
                         <div id='photographer-container'>
