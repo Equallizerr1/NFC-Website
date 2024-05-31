@@ -18,11 +18,13 @@ function Navigation() {
 						No Friends Club Collective UK
 					</Navbar.Brand>
 					<Nav className="me-auto">
-						<Nav.Link href="/concerts">Concerts</Nav.Link>
-						<Nav.Link href="/portraits">Portraits</Nav.Link>
-						<Nav.Link href="/project">Project: I'm Coming Out</Nav.Link>
-						<Nav.Link href="/meet">Meet the Artist</Nav.Link>
-						<Nav.Link href="/testimonials">Testimonials</Nav.Link>
+						<Nav.Link href="/MeetThePhotographer">Meet the Photographer</Nav.Link>
+						<Nav.Link href="/Concerts">Concerts</Nav.Link>
+						<Nav.Link href="/Portraits">Portraits</Nav.Link>
+						<Nav.Link href="/Project:I'mComingOut">Project: I'm Coming Out</Nav.Link>
+						<Nav.Link href="/MeetTheArtist">Meet the Artist</Nav.Link>
+						<Nav.Link href="/Bookings">Bookings</Nav.Link>
+						<Nav.Link href="/Testimonials">Testimonials</Nav.Link>
 					</Nav>
 				</Container>
 			</Navbar>
