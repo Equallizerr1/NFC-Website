@@ -11,7 +11,7 @@ export const MeetThePhotographer = () => {
                     <Col>
                         <div id='photographer-container'>
                             <img
-                                src="../src/assets/skye.jpg" alt="nfc logo" />
+                                src="../src/assets/skye.jpg" alt="photo of the photographer" />
                         </div>
                     </Col>
                     <Col>
