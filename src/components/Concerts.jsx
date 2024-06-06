@@ -7,25 +7,6 @@ import { useEffect, useState } from 'react';
 import { getMedia } from '../../utils/api';
 
 export const Concerts = ({ props }) => {
-    const [flattened, setFlattened] = useState([])
-    const nested = []
-    const word = "https://scontent-man2-1.cdninstagram.com/o1/"
-    const filterByMeet = "M E E T  T H E  A R T I S T  S E R I E S"
-    useEffect(() => {
-        getMedia().then(({ data }) => {
-            data.forEach((item) => {
-                console.log(item)
-                if (item.caption.includes(filterByMeet)) {
-                    return
-                } else {
-
-                    nested.push(item.children.data)
-                    setFlattened(nested.flat())
-                }
-            })
-        })
-    }, [])
-
     return (
         <>
             <Container>
@@ -33,9 +14,9 @@ export const Concerts = ({ props }) => {
             </Container>
             <Box sx={{ overflowY: 'scroll' }}>
                 <ImageList variant="masonry" cols={5} gap={8}>
-                    {flattened.map((item) => (
+                    {props.map((item) => (
                         <>
-                            {item.media_url.includes(word) ? null : <ImageListItem key={item.id}>
+                            <ImageListItem key={item.id}>
                                 <img
                                     //srcSet={`${item.media_url}?w=248&fit=crop&auto=format&dpr=2 2x`}
                                     src={item.media_url}
@@ -43,7 +24,6 @@ export const Concerts = ({ props }) => {
                                     loading="lazy"
                                 />
                             </ImageListItem>
-                            }
                         </>
                     ))}
                 </ImageList>
