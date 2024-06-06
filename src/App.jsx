@@ -13,28 +13,34 @@ import { useEffect, useState } from 'react';
 import { getMedia } from '../utils/api';
 function App() {
 	const [flattened, setFlattened] = useState([])
+	const [meetFlat, setMeetFlat] = useState([])
 	const nested = []
+	const meetFiltered = []
+
 	const word = "https://scontent-man2-1.cdninstagram.com/o1/"
 	const filterByMeet = "M E E T  T H E  A R T I S T  S E R I E S"
 	useEffect(() => {
 		getMedia().then(({ data }) => {
 			data.forEach((item) => {
-				console.log(item)
 				if (item.caption.includes(filterByMeet)) {
-					return
+					meetFiltered.push(item.children.data)
+					setMeetFlat(meetFiltered.flat())
 				} else {
-
 					nested.push(item.children.data)
 					setFlattened(nested.flat())
 				}
 			})
 		})
 	}, [])
-	const filtered = []
+	console.log(meetFlat)
+	const concertsFiltered = []
 	flattened.forEach((item) => {
-		console.log(item)
-		item.media_url.includes(word) ? null : filtered.push(item)
+		item.media_url.includes(word) ? null : concertsFiltered.push(item)
 	})
+
+	// meetFlat.forEach((item) => {
+	// 	item.media_url.includes(word) ? null : meetFiltered.push(item)
+	// })
 
 	return (
 		<>
@@ -42,10 +48,10 @@ function App() {
 			<Routes>
 				<Route path="/" element={<HomePage />} />
 				<Route path="/MeetThePhotographer" element={<MeetThePhotographer />}></Route>
-				<Route path="/Concerts" element={<Concerts props={filtered} />} />
+				<Route path="/Concerts" element={<Concerts props={concertsFiltered} />} />
 				<Route path="/Portraits" element={<Portraits />}></Route>
 				<Route path="/Project:I'mComingOut" element={<Project />}></Route>
-				<Route path="/MeetTheArtist" element={<MeetTheArtist />}></Route>
+				<Route path="/MeetTheArtist" element={<MeetTheArtist props={meetFlat} />}></Route>
 				<Route path="/Bookings" element={<Bookings />}></Route>
 				<Route path="/Testimonials" element={<Testimonials />}></Route>
 			</Routes>
