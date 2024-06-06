@@ -11,6 +11,7 @@ import { Testimonials } from "./components/Testimonials";
 import { MeetThePhotographer } from "./components/MeetThePhotographer";
 import { useEffect, useState } from 'react';
 import { getMedia } from '../utils/api';
+
 function App() {
 	const [flattened, setFlattened] = useState([])
 	const [meetFlat, setMeetFlat] = useState([])
@@ -32,7 +33,6 @@ function App() {
 			})
 		})
 	}, [])
-	console.log(meetFlat)
 	const concertsFiltered = []
 	flattened.forEach((item) => {
 		item.media_url.includes(word) ? null : concertsFiltered.push(item)
