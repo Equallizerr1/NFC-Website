@@ -10,7 +10,7 @@ function Navigation() {
 					<Navbar.Brand href="/">
 						<img
 							alt=""
-							src="../src/assets/NFC_Logo.jpg"
+							src="	/assets/NFC_Logo.jpg"
 							width="30"
 							height="30"
 							className="d-inline-block align-top"

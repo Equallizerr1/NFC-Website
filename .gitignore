@@ -23,3 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 utils/api_details.js
+public/assets
+src/vite-env.d.js
+src/vite-env.d.js
+.env
+src/vite-env.d.js
