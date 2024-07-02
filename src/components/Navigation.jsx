@@ -1,3 +1,6 @@
+// https://mui.com/material-ui/react-app-bar/#app-bar-with-responsive-menu - to implement
+// https://react-bootstrap.netlify.app/docs/components/navbar/#responsive-behaviors - or this
+
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -10,7 +13,7 @@ function Navigation() {
 					<Navbar.Brand href="/">
 						<img
 							alt=""
-							src="	/assets/NFC_Logo.jpg"
+							src="/assets/NFC_Logo.jpg"
 							width="30"
 							height="30"
 							className="d-inline-block align-top"
