@@ -5,7 +5,6 @@ import Container from 'react-bootstrap/Container';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import Backdrop from '@mui/material/Backdrop';
-import CircularProgress from '@mui/material/CircularProgress';
 import { useState } from "react";
 
 export const Concerts = ({ props }) => {
