@@ -22,3 +22,7 @@
 /* scrollbar-width: none; */
 /* Firefox */
 /* } */
+
+img:hover {
+    cursor: pointer;
+}
