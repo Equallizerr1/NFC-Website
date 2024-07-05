@@ -1,5 +1,3 @@
-// https://mui.com/material-ui/react-app-bar/#app-bar-with-responsive-menu - to implement
-
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
