@@ -11,7 +11,8 @@ export const MeetThePhotographer = () => {
                     <Col>
                         <div id='photographer-container'>
                             <img
-                                src="/assets/skye.jpg" alt="photo of the photographer" />
+                                src="/assets/skye.jpg" alt="photo of the photographer"
+                                style={{ borderRadius: 5, }} />
                         </div>
                     </Col>
                     <Col>

@@ -32,7 +32,7 @@ export const Concerts = ({ props }) => {
                     <img src={clickedImage} alt="" style={{ borderRadius: 5, maxHeight: "95%", maxWidth: "95%" }} />
                 </div>
             </Backdrop>
-            <ImageList cols={3} gap={5} sx={{ padding: 5 }}>
+            <ImageList cols={3} gap={5} sx={{ paddingLeft: 5, paddingRight: 5 }}>
                 {props.map((item) => (
                     <div class="concert-image">
                         <ImageListItem key={item.id}
