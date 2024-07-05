@@ -28,25 +28,29 @@ export const Concerts = ({ props }) => {
                 open={open}
                 onClick={handleClose}
             >
-                <img src={clickedImage} alt="" style={{ borderRadius: 5, maxHeight: "95%", maxWidth: "95%" }} />
+                <div class="concert-image">
+                    <img src={clickedImage} alt="" style={{ borderRadius: 5, maxHeight: "95%", maxWidth: "95%" }} />
+                </div>
             </Backdrop>
             <ImageList cols={3} gap={5} sx={{ padding: 5 }}>
                 {props.map((item) => (
-                    <ImageListItem key={item.id}
-                        sx={{
-                            fill: (theme) => theme.palette.common.white,
-                            stroke: (theme) => theme.palette.divider,
-                            strokeWidth: 1,
-                        }}>
-                        <img
-                            srcSet={item.link}
-                            src={item.link}
-                            //alt={item.caption}
-                            loading="lazy"
-                            style={{ borderRadius: 5 }}
-                            onClick={(e) => { handleOpen(e.target.currentSrc) }}
-                        />
-                    </ImageListItem>
+                    <div class="concert-image">
+                        <ImageListItem key={item.id}
+                            sx={{
+                                fill: (theme) => theme.palette.common.white,
+                                stroke: (theme) => theme.palette.divider,
+                                strokeWidth: 1,
+                            }}>
+                            <img
+                                srcSet={item.link}
+                                src={item.link}
+                                //alt={item.caption}
+                                loading="lazy"
+                                style={{ borderRadius: 5 }}
+                                onClick={(e) => { handleOpen(e.target.currentSrc) }}
+                            />
+                        </ImageListItem>
+                    </div>
                 ))}
             </ImageList>
         </>

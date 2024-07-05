@@ -23,6 +23,7 @@
 /* Firefox */
 /* } */
 
-img:hover {
+.concert-image img:hover {
+    max-width: fit-content;
     cursor: pointer;
 }
